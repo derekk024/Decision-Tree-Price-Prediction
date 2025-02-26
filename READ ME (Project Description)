@@ -1,4 +1,10 @@
 # Decision-Tree-Price-Prediction
-This project uses decision trees to predict when the price of an index goes up based on related indices and market data. Unfortunately, yfinance has changed access to certain tickers, so the code included in the project is deprecated and is NO LONGER FUNCTIONAL. 
+Unfortunately, yfinance has changed access to certain tickers, so the code included in the project is deprecated and is NO LONGER FUNCTIONAL. This project uses decision trees to predict when the price of an index goes up based on related indices and market data.
 
 This project includes a file of generating predictions, a file of calculating the average overlap of prediction days, and a file of predicting the average alpha and deviation of alpha. 
+"Predicting Days of Price Increment" is a file that takes relevant market data (market data for the index that is being predicted as well as info deemed relevant that increases prediction accuracy) and uses a decision tree classifier with model.predictproba(), 
+as well as a threshold, to predict days that the indice is likely to increase.
+
+"Prediction Overlap for N Events" takes a variety of these models and finds on average how much the days the model predicts for overlap, so this average overlap can be accounted for accordingly in return estimation. 
+
+"Stochastic Return Estimation" uses Monte Carlo simulations of an empirical distribution of S&P 500 returns as well as a theoretical distribution of predicted indice returns to simulate YoY return distribution. 
