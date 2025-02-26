@@ -11,4 +11,4 @@ as well as a threshold, to predict days that the indice is likely to increase.
 
 "Important Results" is a csv of all results that had significant average price change, with the fourth to last column being average price change (by percent e.g. 0.11 = 11%) and second to last column is the standard deviation of this.
 
-"DT AI Transformed Data" is a csv of all results of the decision tree ever.
+"DT AI Transformed Data" is a csv of all results of the decision tree ever. This file also gives a description of which column corresponds to what. 
