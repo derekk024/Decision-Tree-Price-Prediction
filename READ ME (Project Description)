@@ -1,5 +1,6 @@
 # Decision-Tree-Price-Prediction
 Unfortunately, yfinance has changed access to certain tickers, so the code included in the project is deprecated and is NO LONGER FUNCTIONAL. This project uses decision trees to predict when the price of an index goes up based on related indices and market data.
+Also, the experiments with TensorFlow were done at my home in San Diego, and the old files will be uploaded here once they are completed.
 
 This project includes a file of generating predictions, a file of calculating the average overlap of prediction days, a file of predicting the average alpha and deviation of alpha, a file of important results, and a file of all results. 
 "Predicting Days of Price Increment" is a file that takes relevant market data (market data for the index that is being predicted as well as info deemed relevant that increases prediction accuracy) and uses a decision tree classifier with model.predictproba(), 
