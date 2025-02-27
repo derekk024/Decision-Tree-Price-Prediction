@@ -1,15 +1,44 @@
-# Decision-Tree-Price-Prediction
-Unfortunately, yfinance has changed access to certain tickers, so the code included in the project is deprecated and is NO LONGER FUNCTIONAL. This project uses decision trees to predict when the price of an index goes up based on related indices and market data.
-Also, the experiments with TensorFlow were done at my home in San Diego, and the old files will be uploaded here once I go back to San Diego for spring break.
+Decision Tree Price Prediction
 
-This project includes a file of generating predictions, a file of calculating the average overlap of prediction days, a file of predicting the average alpha and deviation of alpha, a file of important results, and a file of all results. 
-"Predicting Days of Price Increment" is a file that takes relevant market data (market data for the index that is being predicted as well as info deemed relevant that increases prediction accuracy) and uses a decision tree classifier with model.predictproba(), 
-as well as a threshold, to predict days that the indice is likely to increase.
+IMPORTANT NOTICE
+As of now, yfinance has changed access to certain tickers, rendering parts of this project deprecated and non-functional. The code will require modifications to work with updated data sources.
+Additionally, TensorFlow experiments were conducted at my home in San Diego, and older files will be uploaded once I return for spring break.
 
-"Prediction Overlap for N Events" takes a variety of these models and finds on average how much the days the model predicts for overlap, so this average overlap can be accounted for accordingly in return estimation. 
+Project Overview
 
-"Stochastic Return Estimation" uses Monte Carlo simulations of an empirical distribution of S&P 500 returns as well as a theoretical distribution of predicted indice returns to simulate YoY return distribution. 
+This project explores decision tree-based models to predict when an index is likely to increase, leveraging market data from related indices. The methodology involves:
+	•	Decision trees for classification and probability-based predictions
+	•	Analysis of prediction overlap to refine forecasting accuracy (can only hold one index from open to close on a given day)
+	•	Monte Carlo simulations for return estimation
 
-"Important Results" is a csv of all results that had significant average price change, with the fourth to last column being average price change (by percent e.g. 0.11 = 11%) and second to last column is the standard deviation of this.
+Project Contents
 
-"DT AI Transformed Data" is a csv of all results of the decision tree ever. This file also gives a description of which column corresponds to what. 
+Predicting Days of Price Increment
+	•	Uses market data from the target index and relevant related indices
+	•	Implements a decision tree classifier with model.predict_proba() and a threshold-based system
+	•	Outputs predicted days where the index is likely to increase
+
+Prediction Overlap for N Events
+	•	Aggregates predictions from multiple models
+	•	Measures how often predicted days overlap across models
+	•	Helps adjust return estimations accordingly
+
+Stochastic Return Estimation
+	•	Uses Monte Carlo simulations to model year-over-year return distributions
+	•	Simulates returns using:
+	•	Empirical distributions of S&P 500 returns
+	•	Theoretical distributions of predicted index returns
+
+Important Results (CSV File)
+	•	Contains results with significant price changes
+	•	Key columns:
+	•	Fourth-to-last column: Average price change (e.g., 0.11 = 11%)
+	•	Second-to-last column: Standard deviation of price change
+
+DT AI Transformed Data (CSV File)
+	•	Comprehensive dataset of all decision tree predictions
+	•	Includes descriptions of column mappings for reference
+
+Future Updates
+	•	Uploading older TensorFlow experiment files over spring break
+	•	Exploring alternative data sources for yfinance-dependent code
