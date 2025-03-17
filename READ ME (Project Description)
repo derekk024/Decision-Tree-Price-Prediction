@@ -1,7 +1,7 @@
 Decision Tree Price Prediction
 
 IMPORTANT NOTICE
-As of now, yfinance has changed access to certain tickers, rendering parts of this project deprecated and non-functional. The code will require modifications to work with updated data sources.
+As of now, yfinance has changed access to certain tickers, rendering the prediction-producing parts of this project deprecated and non-functional. The code will require modifications to work with updated data sources.
 Additionally, TensorFlow experiments were conducted at my home in San Diego, and older files will be uploaded once I return for spring break.
 
 Project Overview
